@@ -12,6 +12,7 @@ void boxSet(ifstream& reader, string d, string& n, float& p)
 
 void getSum(Deal theDeal[26], float& s)
 {
+  s=0.0;
 for (int w = 0; w<25; w++)
 {
   s += theDeal[w].getBoxPrice();
@@ -20,7 +21,7 @@ for (int w = 0; w<25; w++)
 
 void offerAmount(int c, float sU, float& bO)
 {
-  bO= 1000+(-214.74*c)+(0.040*sU);
+  bO= 10000+(-2714.74 *c)+(0.040*sU);
 
 }
 
